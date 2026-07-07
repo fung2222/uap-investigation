@@ -106,17 +106,79 @@ a:hover {
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  padding: 6rem 1rem;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
 }
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 720px;
-  margin: 0 auto;
+
+/* 全屏背景圖片 */
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
+.hero-bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(110%) brightness(60%);
+}
+
+/* 半透明深色覆蓋層 */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 10, 24, 0.85) 0%,
+    rgba(5, 10, 24, 0.65) 50%,
+    rgba(5, 10, 24, 0.9) 100%
+  );
+}
+
+/* 星空背景 (保留在圖片之上) */
+.hero-bg-stars {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, white 50%, transparent),
+    radial-gradient(1px 1px at 60% 70%, white 50%, transparent),
+    radial-gradient(1px 1px at 80% 20%, white 50%, transparent),
+    radial-gradient(1px 1px at 30% 80%, white 50%, transparent),
+    radial-gradient(1px 1px at 50% 50%, white 50%, transparent),
+    radial-gradient(1px 1px at 90% 60%, white 50%, transparent),
+    radial-gradient(2px 2px at 15% 60%, var(--accent-glow) 50%, transparent),
+    radial-gradient(2px 2px at 75% 35%, var(--accent-cyan) 50%, transparent);
+  background-size: 100% 100%;
+  opacity: 0.4;
+  animation: twinkle 5s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 0.6; }
+}
+
+/* 內容區域 */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .classification {
   display: inline-block;
   padding: 0.3rem 1rem;
@@ -127,19 +189,44 @@ a:hover {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
+
+/* 標題半透明區塊 */
+.hero-title-block {
+  background: rgba(5, 10, 24, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(185, 110, 255, 0.25);
+  border-radius: 4px;
+  padding: 2rem 3rem;
+  margin: 1.5rem auto 2rem;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(185, 110, 255, 0.1),
+    0 0 0 1px rgba(185, 110, 255, 0.1);
+  box-sizing: border-box;
+}
+
 .hero-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 300;
-  margin-bottom: 1.2rem;
   letter-spacing: 0.08em;
   color: var(--text-primary);
-  text-shadow: 0 0 30px rgba(185, 110, 255, 0.3);
+  text-shadow: 
+    0 0 40px rgba(185, 110, 255, 0.4),
+    0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  line-height: 1.2;
 }
+
 .hero-subtitle {
   color: var(--text-dim);
   font-size: 1.05rem;
   margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
 }
+
 .cta-btn {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -159,6 +246,7 @@ a:hover {
 .hero-bg-stars {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background-image:
     radial-gradient(1px 1px at 20% 30%, white 50%, transparent),
     radial-gradient(1px 1px at 60% 70%, white 50%, transparent),
@@ -169,13 +257,14 @@ a:hover {
     radial-gradient(2px 2px at 15% 60%, var(--accent-glow) 50%, transparent),
     radial-gradient(2px 2px at 75% 35%, var(--accent-cyan) 50%, transparent);
   background-size: 100% 100%;
-  opacity: 0.6;
+  opacity: 0.4;
   animation: twinkle 5s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 @keyframes twinkle {
-  from { opacity: 0.4; }
-  to { opacity: 0.8; }
+  from { opacity: 0.3; }
+  to { opacity: 0.6; }
 }
 @keyframes orb-float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
