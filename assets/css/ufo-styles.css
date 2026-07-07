@@ -1,0 +1,200 @@
+/* UFO 專用樣式: 分類頁、機密印章、神秘線框 */
+
+.classified-stamp {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border: 2px solid var(--classified-red);
+  color: var(--classified-red);
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transform: rotate(-3deg);
+  opacity: 0.85;
+  margin: 1rem 0;
+  text-shadow: 1px 1px 0 rgba(193, 39, 45, 0.3);
+}
+
+.event-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.event-detail h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0.5rem;
+  letter-spacing: 0.05em;
+}
+.event-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  background: var(--bg-panel);
+  padding: 1.2rem;
+  border: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+}
+.meta-item .label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.meta-item .value {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.event-detail section {
+  margin: 2.5rem 0;
+}
+.event-detail h2 {
+  color: var(--accent-cyan);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.08em;
+  border-left: 3px solid var(--accent-glow);
+  padding-left: 0.8rem;
+}
+.event-detail p {
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+
+.evidence-list {
+  list-style: none;
+}
+.evidence-list li {
+  padding: 0.6rem 0 0.6rem 1.8rem;
+  position: relative;
+  color: var(--text-dim);
+  border-bottom: 1px dashed var(--border-color);
+}
+.evidence-list li::before {
+  content: "◉";
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+}
+
+.media-frame {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  margin: 1rem 0;
+}
+.media-frame img,
+.media-frame video {
+  width: 100%;
+  display: block;
+}
+
+/* 外星人種族卡片 */
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+.species-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  padding: 1.2rem;
+  transition: all 0.3s;
+}
+.species-card:hover {
+  border-color: var(--accent-glow);
+  box-shadow: 0 0 20px rgba(185, 110, 255, 0.15);
+}
+.species-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+.species-name {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+.species-origin {
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+.species-desc {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+}
+
+/* UFO 分類視覺 */
+.ufo-shape {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: radial-gradient(circle, rgba(185,110,255,0.1), transparent 70%);
+  border: 1px solid var(--accent-glow);
+  border-radius: 50%;
+}
+
+/* 星際地圖 */
+.star-map {
+  background: radial-gradient(ellipse at center, #0d1f3c 0%, #050a18 70%);
+  border: 1px solid var(--border-color);
+  height: 500px;
+  position: relative;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+.star-map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, white 50%, transparent),
+    radial-gradient(1px 1px at 30% 40%, white 50%, transparent),
+    radial-gradient(1px 1px at 50% 30%, white 50%, transparent),
+    radial-gradient(1px 1px at 70% 50%, white 50%, transparent),
+    radial-gradient(1px 1px at 90% 70%, white 50%, transparent),
+    radial-gradient(2px 2px at 25% 75%, var(--accent-cyan) 50%, transparent),
+    radial-gradient(2px 2px at 60% 15%, var(--accent-glow) 50%, transparent);
+}
+.map-marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-glow);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-glow);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.5; }
+}
+
+/* 個人意見 */
+.opinion-block {
+  background: var(--bg-panel);
+  border-left: 3px solid var(--accent-glow);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--text-dim);
+}
+.opinion-block .author {
+  display: block;
+  margin-top: 0.8rem;
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+  font-style: normal;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>機密資料庫 | UAP 調查</title>
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/ufo-styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">
+    <span class="logo-mark">◬</span>
+    <h1>UAP 機密資料庫</h1>
+  </div>
+  <p class="tagline">U.S. Government Disclosure Archive · 1990—2024</p>
+</header>
+
+<nav class="main-nav">
+  <a href="../index.html">首頁</a>
+  <a href="database.html" class="active">機密資料庫</a>
+  <a href="gallery-photos.html">相片庫</a>
+  <a href="gallery-videos.html">影片庫</a>
+  <a href="species.html">外星人種族</a>
+  <a href="ufo-types.html">UFO 分類</a>
+  <a href="star-map.html">星際地圖</a>
+  <a href="opinion.html">個人意見</a>
+</nav>
+
+<main>
+  <h2 class="section-title">機密資料庫</h2>
+  <p class="section-subtitle">完整 20 個已公開、被證實嘅 UAP 事件</p>
+  <div class="event-grid" id="full-grid"></div>
+</main>
+
+<footer class="site-footer">
+  <p>本站資料來自美國政府公開檔案，僅供研究與教育用途。</p>
+  <p class="disclaimer">所有內容均盡可能引用原始來源；本站對資料之詮釋不代表任何官方立場。</p>
+  <p>© 2025 UAP Investigation Project</p>
+</footer>
+
+<script>
+fetch('../data/events.json')
+  .then(r => r.json())
+  .then(events => {
+    const grid = document.getElementById('full-grid');
+    grid.innerHTML = events.map((e) => `
+      <a href="event-${String(e.id).padStart(2,'0')}.html" class="event-card">
+        <span class="event-rank">CASE #${String(e.id).padStart(2,'0')}</span>
+        <h3 class="event-title">${e.title}</h3>
+        <p class="event-date">📅 ${e.date}</p>
+        <p class="event-desc">${e.summary.substring(0, 100)}…</p>
+        <div class="event-tags">
+          ${e.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+      </a>
+    `).join('');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "title": "Tic Tac 事件 — USS Nimitz, 2004",
+    "date": "2004-11-14",
+    "location": "美國加州聖地牙哥外海, 太平洋",
+    "summary": "美國海軍 F/A-18 戰機飛行員於雷達及目視同時接觸到一個長約 40 英尺、白色橢圓形（似 Tic Tac 薄荷糖）嘅不明物體。物體以不可能嘅速度及軌跡移動，無明顯推進裝置。本事件為現代 UAP 調查嘅轉捩點。",
+    "tags": ["海軍", "戰機目擊", "雷達確認", "FLIR影像"],
+    "source": "Pentagon AARO Report 2023; Cmdr. David Fravor & Lt. Cmdr. Alex Dietrich 公證聽證",
+    "evidence": [
+      "FLIR 紅外線影像（公開版可見）",
+      "F/A-18 戰機雷達記錄",
+      "USS Princeton 雷達資料",
+      "多名飛行員目擊證詞"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Go Fast 影片 — USS Theodore Roosevelt, 2015",
+    "date": "2015-01-21",
+    "location": "美國東岸外海, 大西洋",
+    "summary": "海軍飛行員於訓練期間錄得一個低空飛行嘅圓盤狀物體。從影像分析可見，根據海面參照物，物體以極高速度移動。",
+    "tags": ["海軍", "FLIR影像", "戰機目擊"],
+    "source": "AARO Preliminary Assessment 2021",
+    "evidence": ["FLIR 影片", "飛行員證詞", "雷達數據"]
+  },
+  {
+    "id": 3,
+    "title": "Gimbal 影片 — USS Theodore Roosevelt, 2015",
+    "date": "2015-",
+    "location": "美國東岸外海",
+    "summary": "FLIR 影像中可見一個旋轉嘅圓盤狀物體，地平線將其一分為二。物體似乎在旋轉但無可見推進方式。經 Toon 物理分析後仍無法以常規方式解釋。",
+    "tags": ["FLIR影像", "海軍", "旋轉物體"],
+    "source": "AARO 2021 報告; 紐約時報 2017 報導",
+    "evidence": ["FLIR 影片 (解密)", "海軍雷達", "機組人員證詞"]
+  },
+  {
+    "id": 4,
+    "title": "Pentagon 三段影片解密 — 2020",
+    "date": "2020-04-27",
+    "location": "美國國防部",
+    "summary": "美國國防部正式確認並解密三段 UAP 影片：FLIR1、FLIR2、Gimbal。三段影片早於 2007-2017 年流出，國防部於 2020 年正式確認其真實性。",
+    "tags": ["解密", "官方確認", "FLIR"],
+    "source": "DoD Official Statement 2020-04-27",
+    "evidence": ["官方解密影片", "五角大廈新聞稿"]
+  },
+  {
+    "id": 5,
+    "title": "David Grusch 情報官爆料 — 2023",
+    "date": "2023-07-26",
+    "location": "美國國會聽證會",
+    "summary": "前國家地理空間情報局官員 David Grusch 於國會 UAP 聽證會作證，聲稱美國政府長期擁有「非人類起源」嘅墜毀飛行器及「非人類生物」遺骸。情報監察官確認其爆料「可信且緊急」。",
+    "tags": ["國會聽證", "情報官證詞", "非人類生物"],
+    "source": "U.S. House Oversight Subcommittee Hearing 2023-07-26",
+    "evidence": ["國會紀錄", "情報監察官報告 (機密版)", "Grusch 宣誓證詞"]
+  },
+  {
+    "id": 6,
+    "title": "Ryan Graves 國會證詞 — 2023",
+    "date": "2023-07-26",
+    "location": "美國東岸訓練區",
+    "summary": "前 F/A-18 飛行員 Ryan Graves 告知國會，海軍飛行員幾乎每天都在訓練區遇到 UAP。他形容物體為「黑暗中的灰色球體」。",
+    "tags": ["國會聽證", "海軍飛行員", "持續目擊"],
+    "source": "House Oversight Hearing 2023",
+    "evidence": ["國會紀錄", "多名飛行員書面證詞"]
+  },
+  {
+    "id": 7,
+    "title": "NASA UAP 獨立研究小組報告 — 2023",
+    "date": "2023-09-14",
+    "location": "NASA",
+    "summary": "NASA 成立獨立小組研究 UAP，結論：UAP 確實存在，大部分為無人機或氣球，但有「小部分無法解釋」。NASA 任命新 UAP 研究總監。",
+    "tags": ["NASA", "官方研究", "科學方法"],
+    "source": "NASA UAP Independent Study Report 2023",
+    "evidence": ["公開報告 (PDF)", "記者會錄影", "Sean Kirkpatrick 證詞"]
+  },
+  {
+    "id": 8,
+    "title": "Roswell 1947 — 經典案例",
+    "date": "1947-07-08",
+    "location": "美國新墨西哥州 Roswell",
+    "summary": "RAAF 軍方最初發佈新聞稿聲稱「撿到飛碟」，翌日改稱撿到嘅係「氣象氣球」。多年後政府承認涉及「Project Mogul」高空監測氣球計劃，但陰謀論者及目擊者持續聲稱有外星物質及遺體。",
+    "tags": ["歷史", "軍方", "墜毀"],
+    "source": "U.S. Air Force 1994/1997 報告; 多名前軍方人員證詞",
+    "evidence": ["Jesse Marcel 報紙報導", "1994 國會聽證", "前軍方人員訪談"]
+  },
+  {
+    "id": 9,
+    "title": "Phoenix Lights — 1997",
+    "date": "1997-03-13",
+    "location": "美國亞利桑那州 Phoenix 至 Tucson",
+    "summary": "數千人目睹一個 V 字形巨大靜音飛行物由 Phoenix 飛越至 Tucson。時任州長 Fife Symington 後來承認他本人亦親眼目睹。美國空軍後來解釋為 A-10 攻擊機演習照明彈，但無法解釋巨大 V 形結構。",
+    "tags": ["集體目擊", "巨大飛行物", "V形"],
+    "source": "Phoenix New Times 報導; Fife Symington 2015 公開承認",
+    "evidence": ["多段家庭攝影", "州長公開承認", "空軍解釋（被質疑）"]
+  },
+  {
+    "id": 10,
+    "title": "Rendlesham Forest 事件 — 1980",
+    "date": "1980-12-26",
+    "location": "英國 Suffolk, RAF Woodbridge（雖非美國，但涉美軍基地）",
+    "summary": "美軍駐英基地多名軍人目睹不明飛行物降落在森林中，聲稱近距離接觸，基地動物受驚。事件被英國國會記錄為「僅次於 Roswell 嘅重大 UAP 事件」。",
+    "tags": ["美軍基地", "近距離接觸", "雷達"],
+    "source": "UK MoD Files (declassified); 國會質詢",
+    "evidence": ["基地內部備忘錄", "多名軍官證詞", "現場輻射讀數（私人檢測）"]
+  },
+  {
+    "id": 11,
+    "title": "AATIP / AAWSAP 五角大廈秘密計劃",
+    "date": "2007-2012",
+    "location": "美國國防部",
+    "summary": "國會內部人士 Luis Elizondo 透露國防部曾有秘密 UAP 調查計劃，後被參議員 Harry Reid 推動以「先進航空威脅識別計劃」名義運作。涉及每年 2,200 萬美元預算。",
+    "tags": ["國防部", "秘密計劃", "AAWSAP"],
+    "source": "NYT 2017 報導; Luis Elizondo 公開聲明",
+    "evidence": ["Harry Reid 公開確認", "Elizondo 訪談", "國防部內部備忘（部分解密）"]
+  },
+  {
+    "id": 12,
+    "title": "Betsy & Bob Salas 哨兵事件 — 1967",
+    "date": "1967-03-16",
+    "location": "美國蒙大拿州 Malmstrom AFB, ICBM 發射井",
+    "summary": "前美軍上尉 Robert Salas 聲稱多名 UFO 飛越核導彈發射井上空後，10 枚民兵導彈同時失效。事件由美方調查後歸檔為「機密」。",
+    "tags": ["核導彈", "軍方事件", "同時失效"],
+    "source": "Robert Salas 自傳; 國會 UAP 聽證紀錄",
+    "evidence": ["多名退伍軍人證詞", "Robert Salas 宣誓證詞", "事件紀錄"]
+  },
+  {
+    "id": 13,
+    "title": "STS-48 NASA 直播事件 — 1991",
+    "date": "1991-09-15",
+    "location": "NASA 太空梭 Discovery 任務",
+    "summary": "NASA 太空梭直播中，地面分析師觀察到多個不明光點突然改變方向飛行，疑為 UAP。NASA 直播突然中斷。",
+    "tags": ["NASA", "太空", "直播影像"],
+    "source": "NASA 公開直播 (已重剪)",
+    "evidence": ["原始直播錄影", "分析師訪談", "民間分析"]
+  },
+  {
+    "id": 14,
+    "title": "O'Hare 機場目擊 — 2006",
+    "date": "2006-11-07",
+    "location": "美國芝加哥 O'Hare 國際機場",
+    "summary": "聯合航空職員及至少 12 名地勤人員目睹一個灰色圓盤狀物體懸停於機場閘口上方數分鐘後高速垂直上升穿入雲層。機管局起初拒絕調查，後被 FAA 內部備忘證實。",
+    "tags": ["機場", "集體目擊", "垂直起降"],
+    "source": "Chicago Tribune 報導; FAA 內部備忘",
+    "evidence": ["多名職員證詞", "FAA 雷達資料（機密）", "現場照片"]
+  },
+  {
+    "id": 15,
+    "title": "USS Kidd F/A-18 遭遇 — 2021",
+    "date": "2021-",
+    "location": "美國西岸外海",
+    "summary": "海軍飛行員於 USS Kidd 上空發現不明球體，FLIR 紀錄可見物體於高空高速移動。事件列於五角大廈 UAP 任務報告。",
+    "tags": ["海軍", "FLIR", "近距離"],
+    "source": "DoD UAP Task Force 報告 2021",
+    "evidence": ["FLIR 影像", "雷達數據", "機組人員證詞"]
+  },
+  {
+    "id": 16,
+    "title": "AARO 歷史記錄報告 — 2024",
+    "date": "2024-03-08",
+    "location": "Pentagon AARO",
+    "summary": "五角大廈 AARO 公布歷史案例研究報告，分析 1945 年以來多個 UAP 案例，部分標示為「未能解釋」。報告公開下載。",
+    "tags": ["AARO", "歷史研究", "官方報告"],
+    "source": "AARO Historical Record Report Vol.I 2024-03",
+    "evidence": ["公開 PDF", "案例檔案", "五角大廈記者會"]
+  },
+  {
+    "id": 17,
+    "title": "Skinwalker Ranch — 持續事件",
+    "date": "1996-至今",
+    "location": "美國猶他州 Uinta Basin",
+    "summary": "前軍方情報官購入神秘地塊後，記錄到大量 UAP、目擊、神秘生物及電子異常。多位科學家包括 Robert Bigelow 及 Hal Puthoff 進行研究。",
+    "tags": ["持續事件", "科學研究", "電子戰"],
+    "source": "Bigelow Aerospace 內部研究; Colm Kelleher 著述",
+    "evidence": ["環境監測數據", "科學團隊報告", "影片紀錄"]
+  },
+  {
+    "id": 18,
+    "title": "Westall 目擊 — 1966",
+    "date": "1966-04-06",
+    "location": "澳洲墨爾本 Westall（中情局關聯案例）",
+    "summary": "逾 200 名學生及教職員目睹一個銀色圓盤兩度降落在球場上，再迅速飛走。事件被澳洲當局即時封鎖，期間有多名校方人員被 CIA 訪問。",
+    "tags": ["集體目擊", "降落", "政府掩蓋"],
+    "source": "Westall 高中文件; 目擊者 50 年後集會",
+    "evidence": ["多名目擊者證詞", "學校內部通知", "目擊者訪談紀錄"]
+  },
+  {
+    "id": 19,
+    "title": "Hudson Valley 波長燈 — 1980s",
+    "date": "1982-1986",
+    "location": "美國紐約州 Hudson Valley",
+    "summary": "連續多年，居民及警察多次目擊一個巨大 V 形飛行物緩慢飛越 Hudson Valley，部分個案有雷達確認。",
+    "tags": ["反覆目擊", "巨大 V 形", "雷達"],
+    "source": "NY State Police 報告; J. Allen Hynek 個案",
+    "evidence": ["警員證詞", "目擊者繪圖", "雷達記錄"]
+  },
+  {
+    "id": 20,
+    "title": "Pine Bush 紐約州 — 持續個案",
+    "date": "1980s-2000s",
+    "location": "美國紐約州 Pine Bush",
+    "summary": "居民持續目睹三角形及圓盤狀 UAP，部分個案有 Stew Webb 等研究員實地拍攝。地區被形容為「美國最活躍 UAP 熱點之一」。",
+    "tags": ["持續", "三角飛行物", "民間研究"],
+    "source": "Stew Webb UFOSIGHTINGS 組織檔案",
+    "evidence": ["多段家庭攝影", "居民證詞", "研究者訪談"]
+  }
+]
