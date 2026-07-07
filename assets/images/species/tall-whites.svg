@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="tallSkin" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#e8e8f0"/>
+    </radialGradient>
+    <radialGradient id="tallEye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#003366"/>
+    </radialGradient>
+  </defs>
+  <path d="M100,25 C130,25 155,50 155,90 C155,130 125,160 100,160 C75,160 45,130 45,90 C45,50 70,25 100,25" fill="url(#tallSkin)" stroke="#b96eff" stroke-width="1" opacity="0.95"/>
+  <ellipse cx="65" cy="85" rx="18" ry="24" fill="url(#tallEye)"/>
+  <ellipse cx="135" cy="85" rx="18" ry="24" fill="url(#tallEye)"/>
+  <ellipse cx="62" cy="80" rx="5" ry="7" fill="#fff" opacity="0.8"/>
+  <ellipse cx="132" cy="80" rx="5" ry="7" fill="#fff" opacity="0.8"/>
+  <path d="M98,110 Q100,125 102,110" stroke="#ccc" stroke-width="1" fill="none"/>
+  <path d="M85,140 Q100,143 115,140" stroke="#aaa" stroke-width="1" fill="none"/>
+  <path d="M100,25 C130,25 155,50 155,90 C155,130 125,160 100,160 C75,160 45,130 45,90 C45,50 70,25 100,25" fill="none" stroke="#00bfff" stroke-width="0.5" opacity="0.4"/>
+</svg>

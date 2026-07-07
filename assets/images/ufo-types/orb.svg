@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="orbBody" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#e8e8f0" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#b8c8e8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#8a9bd8" stop-opacity="0.7"/>
+    </radialGradient>
+    <radialGradient id="orbGlow" cx="35%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#5fe7e7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#b96eff" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="orbCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b96eff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4a0080" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <!-- 球體外殼 -->
+  <circle cx="100" cy="100" r="85" fill="url(#orbBody)" stroke="#b96eff" stroke-width="2" opacity="0.9"/>
+  <!-- 發光外殼 -->
+  <circle cx="100" cy="100" r="80" fill="url(#orbGlow)" opacity="0.6"/>
+  <!-- 核心發光 -->
+  <circle cx="100" cy="100" r="35" fill="url(#orbCore)" opacity="0.7"/>
+  <!-- 表面反光高光 -->
+  <ellipse cx="70" cy="60" rx="25" ry="15" fill="#fff" opacity="0.3"/>
+  <!-- 表面紋理條紋 -->
+  <path d="M40,100 Q100,85 160,100" stroke="#5fe7e7" stroke-width="0.8" fill="none" opacity="0.3" stroke-dasharray="10,5"/>
+  <path d="M40,115 Q100,115 160,115" stroke="#b96eff" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="10,5"/>
+</svg>

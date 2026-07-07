@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="unkBody" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a5568" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#2d3748" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1a202c" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="unkGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#b96eff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#5fe7e7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c1272d" stop-opacity="0.1"/>
+    </radialGradient>
+    <radialGradient id="unkCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b96eff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4a0080" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <!-- 不規則幾何形狀 (不可識別) -->
+  <path d="M100,25 L140,50 L160,95 L130,150 L70,150 L40,95 L70,50 Z" fill="url(#unkBody)" stroke="#b96eff" stroke-width="2" opacity="0.8" stroke-dasharray="8,4"/>
+  <!-- 發光邊緣 -->
+  <path d="M100,25 L140,50 L160,95 L130,150 L70,150 L40,95 L70,50 Z" fill="url(#unkGlow)" opacity="0.5"/>
+  <!-- 核心問號/脈衝 -->
+  <text x="100" y="115" font-family="monospace" font-size="60" fill="url(#unkCore)" text-anchor="middle" opacity="0.7">?</text>
+  <!-- 干擾線條 -->
+  <path d="M30,40 L170,80" stroke="#b96eff" stroke-width="1" opacity="0.2" stroke-dasharray="4,4"/>
+  <path d="M170,40 L30,80" stroke="#5fe7e7" stroke-width="1" opacity="0.2" stroke-dasharray="4,4"/>
+  <path d="M30,120 L170,160" stroke="#c1272d" stroke-width="1" opacity="0.15" stroke-dasharray="4,4"/>
+  <path d="M170,120 L30,160" stroke="#5fe7e7" stroke-width="1" opacity="0.15" stroke-dasharray="4,4"/>
+  <!-- 數據噪點 -->
+  <g fill="#b96eff" opacity="0.3">
+    <circle cx="55" cy="70" r="2"/>
+    <circle cx="145" cy="75" r="1.5"/>
+    <circle cx="60" cy="130" r="1.5"/>
+    <circle cx="140" cy="125" r="2"/>
+    <circle cx="100" cy="50" r="1"/>
+    <circle cx="100" cy="150" r="1.5"/>
+  </g>
+</svg>

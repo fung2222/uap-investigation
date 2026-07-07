@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="discBody" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#d8d8e8" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#a8b8e8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7888d8" stop-opacity="0.7"/>
+    </radialGradient>
+    <radialGradient id="discRim" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b96eff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4a0080" stop-opacity="0.9"/>
+    </radialGradient>
+    <radialGradient id="discDome" cx="50%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#5fe7e7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#b96eff" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  <!-- 底盤 -->
+  <ellipse cx="100" cy="105" rx="85" ry="18" fill="url(#discBody)" stroke="#b96eff" stroke-width="2" opacity="0.95"/>
+  <!-- 邊緣發光環 -->
+  <ellipse cx="100" cy="105" rx="82" ry="15" fill="url(#discRim)" opacity="0.7"/>
+  <!-- 上蓋圓頂 -->
+  <ellipse cx="100" cy="55" rx="45" ry="22" fill="url(#discDome)" stroke="#b96eff" stroke-width="1.5" opacity="0.9"/>
+  <!-- 中央發光核心 -->
+  <ellipse cx="100" cy="65" rx="18" ry="10" fill="#5fe7e7" opacity="0.6"/>
+  <!-- 底部細節 -->
+  <ellipse cx="100" cy="125" rx="55" ry="8" fill="#4a0080" opacity="0.4"/>
+  <!-- 表面條紋 -->
+  <path d="M55,80 Q100,65 145,80" stroke="#5fe7e7" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="8,4"/>
+  <path d="M55,100 Q100,95 145,100" stroke="#b96eff" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="8,4"/>
+</svg>

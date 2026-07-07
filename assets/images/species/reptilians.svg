@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="reptileSkin" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#3d5a3d"/>
+      <stop offset="100%" stop-color="#1a3a1a"/>
+    </radialGradient>
+    <radialGradient id="reptileEye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6600"/>
+      <stop offset="50%" stop-color="#cc3300"/>
+      <stop offset="100%" stop-color="#661100"/>
+    </radialGradient>
+    <pattern id="scales" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0,12 Q6,0 12,12" fill="none" stroke="#2d4a2d" stroke-width="0.5" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <path d="M100,25 C140,25 170,60 170,105 C170,145 135,175 100,175 C65,175 30,145 30,105 C30,60 60,25 100,25" fill="url(#reptileSkin)" stroke="#b96eff" stroke-width="1"/>
+  <path d="M100,25 C140,25 170,60 170,105 C170,145 135,175 100,175 C65,175 30,145 30,105 C30,60 60,25 100,25" fill="url(#scales)" opacity="0.5"/>
+  <ellipse cx="70" cy="90" rx="10" ry="25" fill="url(#reptileEye)"/>
+  <ellipse cx="130" cy="90" rx="10" ry="25" fill="url(#reptileEye)"/>
+  <ellipse cx="70" cy="90" rx="3" ry="18" fill="#000"/>
+  <ellipse cx="130" cy="90" rx="3" ry="18" fill="#000"/>
+  <ellipse cx="92" cy="120" rx="4" ry="3" fill="#0a2a0a"/>
+  <ellipse cx="108" cy="120" rx="4" ry="3" fill="#0a2a0a"/>
+  <path d="M80,145 Q85,140 90,145 M95,145 Q100,140 105,145 M110,145 Q115,140 120,145" stroke="#fff" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M100,40 Q100,70 100,85" stroke="#2d4a2d" stroke-width="3" fill="none" opacity="0.6"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140">
+  <defs>
+    <radialGradient id="cigarBody" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8d0e8" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#8a9bd8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#5a6ab8" stop-opacity="0.7"/>
+    </radialGradient>
+    <radialGradient id="cigarGlow" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#5fe7e7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#b96eff" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="cigarEnd" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c1272d" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#8b0000" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <!-- 長柱主體 -->
+  <rect x="30" y="40" width="140" height="60" rx="30" fill="url(#cigarBody)" stroke="#b96eff" stroke-width="2" opacity="0.95"/>
+  <!-- 發光外層 -->
+  <rect x="32" y="42" width="136" height="56" rx="28" fill="url(#cigarGlow)" opacity="0.5"/>
+  <!-- 兩端發光 -->
+  <ellipse cx="30" cy="70" rx="8" ry="30" fill="url(#cigarEnd)"/>
+  <ellipse cx="170" cy="70" rx="8" ry="30" fill="url(#cigarEnd)"/>
+  <!-- 表面條紋 -->
+  <path d="M40,50 L160,50" stroke="#5fe7e7" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="12,6"/>
+  <path d="M40,70 L160,70" stroke="#b96eff" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="12,6"/>
+  <path d="M40,90 L160,90" stroke="#5fe7e7" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="12,6"/>
+</svg>

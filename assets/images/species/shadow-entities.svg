@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="shadowBody" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0a0a1a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="shadowEye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b96eff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4a0080" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <path d="M100,30 C135,30 160,60 160,100 C160,140 130,170 100,170 C70,170 40,140 40,100 C40,60 70,30 100,30" fill="url(#shadowBody)" filter="url(#blur)" opacity="0.9"/>
+  <ellipse cx="70" cy="85" rx="12" ry="18" fill="url(#shadowEye)" opacity="0.8"/>
+  <ellipse cx="130" cy="85" rx="12" ry="18" fill="url(#shadowEye)" opacity="0.8"/>
+  <path d="M85,135 Q100,140 115,135" stroke="#b96eff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,4"/>
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#b96eff" stroke-width="0.5" opacity="0.3" stroke-dasharray="8,8"/>
+</svg>

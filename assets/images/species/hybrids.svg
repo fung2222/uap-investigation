@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="hybridSkin" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#c8d8e8"/>
+      <stop offset="100%" stop-color="#8a9ba8"/>
+    </radialGradient>
+    <radialGradient id="hybridEye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a3a5f"/>
+      <stop offset="100%" stop-color="#0a1a2f"/>
+    </radialGradient>
+  </defs>
+  <path d="M100,30 C135,30 160,60 160,100 C160,135 130,165 100,165 C70,165 40,135 40,100 C40,60 65,30 100,30" fill="url(#hybridSkin)" stroke="#b96eff" stroke-width="1" opacity="0.9"/>
+  <ellipse cx="68" cy="85" rx="16" ry="20" fill="url(#hybridEye)"/>
+  <ellipse cx="132" cy="85" rx="16" ry="20" fill="url(#hybridEye)"/>
+  <ellipse cx="65" cy="80" rx="4" ry="5" fill="#4a90d9" opacity="0.7"/>
+  <ellipse cx="129" cy="80" rx="4" ry="5" fill="#4a90d9" opacity="0.7"/>
+  <path d="M92,115 Q96,128 100,125 Q104,128 108,115" stroke="#7a8a9a" stroke-width="1.5" fill="none"/>
+  <path d="M85,140 Q100,148 115,140" stroke="#6a7a8a" stroke-width="1.5" fill="none"/>
+  <path d="M38,95 Q25,85 30,110 Q35,120 42,105" fill="url(#hybridSkin)" stroke="#7a8a9a" stroke-width="0.5"/>
+  <path d="M162,95 Q175,85 170,110 Q165,120 158,105" fill="url(#hybridSkin)" stroke="#7a8a9a" stroke-width="0.5"/>
+</svg>

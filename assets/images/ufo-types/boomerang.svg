@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <defs>
+    <radialGradient id="boomBody" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="100%" stop-color="#1a202c"/>
+    </radialGradient>
+    <linearGradient id="boomGlow" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#b96eff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#5fe7e7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#c1272d" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <!-- 迴力鏢/V形主體 -->
+  <path d="M25,90 L95,25 L175,90 L160,100 L95,50 L40,100 Z" fill="url(#boomBody)" stroke="url(#boomGlow)" stroke-width="2" opacity="0.95"/>
+  <!-- 內部發光條紋 -->
+  <path d="M40,82 L100,40 L160,82" fill="none" stroke="url(#boomGlow)" stroke-width="3" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40,76 L95,48 L150,76" fill="none" stroke="#b96eff" stroke-width="1.5" opacity="0.5" stroke-dasharray="8,4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 三個發光引擎 -->
+  <ellipse cx="50" cy="85" rx="8" ry="5" fill="#b96eff" opacity="0.8"/>
+  <ellipse cx="100" cy="88" rx="10" ry="6" fill="#5fe7e7" opacity="0.8"/>
+  <ellipse cx="150" cy="85" rx="8" ry="5" fill="#c1272d" opacity="0.8"/>
+  <!-- 前端發光尖 -->
+  <ellipse cx="100" cy="22" rx="12" ry="6" fill="url(#boomGlow)" opacity="0.7"/>
+</svg>
