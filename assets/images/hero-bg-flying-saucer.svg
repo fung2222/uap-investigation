@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="skyGradient" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#1a2a3a"/>
+      <stop offset="50%" stop-color="#0d1a2a"/>
+      <stop offset="100%" stop-color="#050a18"/>
+    </radialGradient>
+    <radialGradient id="saucerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a4a5a"/>
+      <stop offset="50%" stop-color="#1a2a3a"/>
+      <stop offset="100%" stop-color="#0a1a2a"/>
+    </radialGradient>
+    <radialGradient id="domeGlow" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#4a5a6a"/>
+      <stop offset="100%" stop-color="#1a2a3a"/>
+    </radialGradient>
+    <filter id="atmosphere" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay"/>
+    </filter>
+    <filter id="vignette" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="150" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  
+  <!-- 深空背景 -->
+  <rect width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- 大氣層/霧氣效果 -->
+  <ellipse cx="960" cy="700" rx="1200" ry="400" fill="#0a1525" opacity="0.6" filter="url(#vignette)"/>
+  
+  <!-- 雲層/霧氣層 -->
+  <g opacity="0.4" filter="url(#atmosphere)">
+    <ellipse cx="300" cy="200" rx="400" ry="80" fill="#1a2a3a"/>
+    <ellipse cx="1200" cy="150" rx="500" ry="100" fill="#152535"/>
+    <ellipse cx="1600" cy="300" rx="300" ry="60" fill="#1a2a3a"/>
+    <ellipse cx="800" cy="400" rx="600" ry="120" fill="#0d1a2a" opacity="0.3"/>
+  </g>
+  
+  <!-- 遠處地平線/海面 -->
+  <ellipse cx="960" cy="1100" rx="1500" ry="200" fill="#0a1525" opacity="0.5"/>
+  
+  <!-- 經典飛碟主體 -->
+  <g transform="translate(960, 450)">
+    <!-- 底部發光環 -->
+    <ellipse cx="0" cy="60" rx="200" ry="25" fill="#1a2a3a" opacity="0.6"/>
+    <ellipse cx="0" cy="60" rx="180" ry="20" fill="#2a3a4a" opacity="0.4"/>
+    
+    <!-- 主碟體 -->
+    <ellipse cx="0" cy="0" rx="280" ry="70" fill="url(#saucerGlow)"/>
+    <ellipse cx="0" cy="0" rx="270" ry="65" fill="#1a2a3a"/>
+    
+    <!-- 碟體邊緣細節 -->
+    <ellipse cx="0" cy="0" rx="275" ry="68" fill="none" stroke="#2a3a4a" stroke-width="1" opacity="0.5"/>
+    
+    <!-- 中央駕駛艙/圓頂 -->
+    <ellipse cx="0" cy="-40" rx="80" ry="50" fill="url(#domeGlow)"/>
+    <ellipse cx="0" cy="-40" rx="75" ry="45" fill="#1a2a3a"/>
+    <ellipse cx="0" cy="-55" rx="40" ry="25" fill="#2a3a4a" opacity="0.7"/>
+    <ellipse cx="0" cy="-60" rx="20" ry="12" fill="#3a4a5a" opacity="0.9"/>
+    
+    <!-- 碟體表面細節線條 -->
+    <g stroke="#2a3a4a" stroke-width="0.5" opacity="0.3" fill="none">
+      <ellipse cx="0" cy="0" rx="200" ry="50"/>
+      <ellipse cx="0" cy="0" rx="150" ry="38"/>
+      <ellipse cx="0" cy="0" rx="100" ry="25"/>
+    </g>
+    
+    <!-- 底部發光細節 -->
+    <ellipse cx="0" cy="65" rx="100" ry="15" fill="#2a3a4a" opacity="0.3"/>
+    <ellipse cx="0" cy="70" rx="60" ry="10" fill="#3a4a5a" opacity="0.4"/>
+    
+    <!-- 底部發光環 (紅/橙色細節) -->
+    <ellipse cx="0" cy="72" rx="50" ry="8" fill="#3a2a1a" opacity="0.4"/>
+    <ellipse cx="0" cy="75" rx="30" ry="5" fill="#4a3a2a" opacity="0.3"/>
+  </g>
+  
+  <!-- 遠處星星/光點 -->
+  <g fill="white" opacity="0.6">
+    <circle cx="200" cy="150" r="1.5"/>
+    <circle cx="1700" cy="100" r="1"/>
+    <circle cx="400" cy="350" r="1"/>
+    <circle cx="1500" cy="250" r="1.5"/>
+    <circle cx="600" cy="500" r="1"/>
+    <circle cx="1300" cy="400" r="1"/>
+    <circle cx="300" cy="600" r="1.5"/>
+    <circle cx="1600" cy="550" r="1"/>
+  </g>
+  
+  <!-- 邊緣暗角 -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+</svg>

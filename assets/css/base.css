@@ -116,7 +116,7 @@ a:hover {
   border-bottom: 1px solid var(--border-color);
 
   /* 全屏背景圖片 - 直接用 CSS background */
-  background-image: url('../assets/images/hero-bg-ufo3.jpg');
+  background-image: url('../assets/images/hero-bg-flying-saucer.svg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
