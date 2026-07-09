@@ -112,12 +112,7 @@ a:hover {
   justify-content: center;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
-
-  /* 全屏背景圖片 - 直接用 CSS background */
-  background-image: url('../assets/images/hero-bg-flying-saucer.svg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: var(--bg-primary);
 }
 
 /* 半透明深色覆蓋層 */
