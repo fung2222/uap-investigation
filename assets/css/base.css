@@ -677,3 +677,24 @@ main {
   margin: 1rem 0;
   text-shadow: 1px 1px 0 rgba(193, 39, 45, 0.3);
 }
+
+/* ===== HERO IMAGE ===== */
+.hero-image {
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.hero-image figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-align: center;
+  font-style: italic;
+}
